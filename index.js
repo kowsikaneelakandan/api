@@ -26,7 +26,7 @@ connectDB();
 //const __dirname = path.resolve();
 
 const app = express();
-CORS configuration
+//CORS configuration
 const corsOptions = {
   origin: 'http://localhost:5173', // Change this to your frontend URL
   credentials: true, // Allow cookies to be sent
