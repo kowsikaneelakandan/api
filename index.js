@@ -22,9 +22,15 @@ const connectDB = async () => {
 connectDB();
 
 
-const __dirname = path.resolve();
+//const __dirname = path.resolve();
 
 const app = express();
+CORS configuration
+const corsOptions = {
+  origin: 'http://localhost:5173', // Change this to your frontend URL
+  credentials: true, // Allow cookies to be sent
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 //allow JSON data
